@@ -90,7 +90,7 @@ SRP в `service.Park`: он и хранит объекты, и выдаёт но
 Добавление в парк проверяют TestAddVehicle_AcceptedVehicleJoinsParkWithNextNumber и TestAddVehicle_RejectedVehicleReturnsReasonAndIsNotAdded.  
 Правило «для новичков» проверяет TestBeginnerVehicles_SimplicityThreshold.
 
-**Как подменяется зависимость?**
+**Как подменяется зависимость?**. 
 `Park` получает техосмотр через интерфейс `ServiceCenter` в конструкторе `NewPark`.
 Реализацию подставляет DI-контейнер в `main.go`, а в тестах её передают вручную в виде заглушки stubServiceCenter.
 
